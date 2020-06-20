@@ -1,6 +1,6 @@
 # Write a func that a value and checks if that key and value exists.
 
-def isKeyExist(dictionaySample, searchKey, searchValue):
+def isKeyExist(dictionarySample, searchKey, searchValue):
     if searchKey in dictionarySample:
         if searchValue == str(dictionarySample[searchKey]):
             print("We have found the key matching the value.")
