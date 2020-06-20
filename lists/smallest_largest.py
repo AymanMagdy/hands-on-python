@@ -16,8 +16,19 @@ def largestNumber(listElements):
             largest = element
     return largest
 
+# To return both results directly
+def smallestLargest(listElements):
+    smallest = smallestNumber(listElements)
+    largest = largestNumber(listElements)
+    result = {
+        'smallest': smallest,
+        'largest': largest
+    }
+    return result
+
 if __name__ == "__main__":
     listElements = [4, 5 , 3, 5]
     # To replace with the needed function.
-    smallest = smallestNumber(listElements)
-    print("The smallest is: {}".format(smallest))
+    smallestLargestResult = smallestLargest(listElements)
+    print("The smallest is: {}".format(smallestLargestResult['smallest']))
+    print("The largest is: {}".format(smallestLargestResult['largest']))
