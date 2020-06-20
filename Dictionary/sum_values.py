@@ -1,10 +1,10 @@
 # write a func that sums all the value in a given dictionary
 
 def sumDictionary(sampleDictionary):
-    restul = 0
+    result = 0
     for key in sampleDictionary:
-        restul += sampleDictionary[key]
-    return restul
+        result += sampleDictionary[key]
+    return result
 
 
 if __name__ == "__main__":
