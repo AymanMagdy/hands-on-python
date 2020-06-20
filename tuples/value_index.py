@@ -3,9 +3,10 @@
 def valueIndex(tupleElements, valueToCheck):
     try:
         stringTupleElements = str(tupleElements)
-        return stringTupleElements.index(str(valueToCheck))
+        if stringTupleElements.index(str(valueToCheck)):
+            return True, stringTupleElements.index(str(valueToCheck))
     except:
-        return "The element is not in the tuple."
+        return False
 
 if __name__ == "__main__":
     sampleTuple = ('Ayan', 15, 'Ahmed')
