@@ -85,12 +85,3 @@ class TestTuples(unittest.TestCase):
             self.assertEqual(valueIndex(sample_tuple, str(value_to_check)), (True, 9), "Should return False.")
         except Exception as error:
             raise error.AssertionError
-
-if __name__ == '__main__':
-    TestTuples.test_add_to_tuples()
-    TestTuples.test_concate_tuples()
-    TestTuples.test_conv_tuple_string()
-    TestTuples.test_element_checker()
-    TestTuples.test_reverse_tuple()
-    TestTuples.test_colone_tuple()
-    TestTuples.test_tuple_to_string()
