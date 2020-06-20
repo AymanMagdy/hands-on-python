@@ -9,7 +9,7 @@ from specific_index import specificIndex
 from string_counter import stringCounterMatcher
 from sum_list import sumList
 
-# The class that includes all the test methods for the lists folder
+# The class that includes all the test methods for the lists folder.
 class TestList(unittest.TestCase):
     # Testing the common_items.py
     def test_common_items(self):
