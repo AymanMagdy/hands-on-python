@@ -82,6 +82,6 @@ class TestTuples(unittest.TestCase):
         sample_tuple = ('Ayan', 15, 'Ahmed')
         value_to_check = 15
         try:
-            self.assertEqual(valueIndex(sample_tuple, str(value_to_check)), (True, 9), "Should return False.")
+            self.assertEqual(valueIndex(sample_tuple, str(value_to_check)), (True, 9), "Should return True.")
         except Exception as error:
             raise error.AssertionError
