@@ -29,3 +29,17 @@ class TestAllBranches(unittest.TestCase):
             os.system("nosetests Sets/test_sets_actions.py -v")
         except Exception:
             raise ModuleNotFoundError("Error finding module -> Sets to run test cases.")
+
+    # Run the tests for the Sets module
+    def test_module_string_operations(self):
+        try:
+            os.system("nosetests String-operations/test_string_operations.py -v")
+        except Exception:
+            raise ModuleNotFoundError("Error finding module -> String-operations to run test cases.")
+
+    # Run the tests for the Sets module
+    def test_module_Collections(self):
+        try:
+            os.system("nosetests Collections/test_collections_actions.py -v")
+        except Exception:
+            raise ModuleNotFoundError("Error finding module -> Sets to run test cases.")
